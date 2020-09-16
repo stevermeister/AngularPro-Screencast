@@ -10,11 +10,14 @@ import { Attribute, Component, Input, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class GreetingsComponent {
+export class GreetingsComponent implements OnInit{
   // @Input() name;
 
   constructor(@Attribute('name') public name) {
-    console.log(name);
 
+  }
+
+  ngOnInit() {
+    console.log(this.name);
   }
 }

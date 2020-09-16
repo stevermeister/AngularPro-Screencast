@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
     <app-greetings name="John"></app-greetings>
     <app-greetings name="Alice"></app-greetings>
     <app-greetings name="Bob"></app-greetings>
-    <app-greetings [name]="stranger"></app-greetings>
+    <!-- <app-greetings [name]="stranger"></app-greetings> -->
   `,
   styles: []
 })
