@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AngularElement</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <app-hello>
+    Something Else
+  </app-hello>
+  <app-hello name="John"></app-hello>
+  <app-hello name="Alice"></app-hello>
+  <app-hello name="Nick"></app-hello>
+
+  <script>
+    const el = document.querySelector('app-hello');
+    el.setAttribute('name', 'Julia');
+    el.addEventListener('clicked', event => {
+      console.log(event.detail);
+    })
+
+  </script>
+</body>
+</html>
