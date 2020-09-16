@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-    <div *delay="3000; hide:3000">
+    <div *delay="1000; hide:2000">
       this element will appear after some time
     </div>
   `,

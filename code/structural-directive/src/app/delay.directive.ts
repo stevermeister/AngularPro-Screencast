@@ -9,15 +9,16 @@ export class DelayDirective implements OnInit {
   @Input() delayHide
 
   constructor(private view: ViewContainerRef,
-    private template: TemplateRef<ElementRef>) {}
+    private template: TemplateRef<ElementRef>) {
+
+  }
 
   ngOnInit() {
     setTimeout(_ => {
       const view = this.view.createEmbeddedView(this.template);
       setTimeout(_ => {
         view.destroy();
-      }, this.delayHide);
+      }, this.delayHide)
     }, this.delay);
   }  
-
 }
