@@ -5,24 +5,29 @@ import { HostDirective } from './host.directive';
   selector: 'app-root',
   template: `
     <button (click)="load()">LOAD</button>
+
     <hr>
-    <div *host>
-    </div>
+    <div *host></div>
     <hr>
   `,
   styles: []
 })
 export class AppComponent {
 
-  @ViewChild(HostDirective, { read: ViewContainerRef}) hostView;
+  @ViewChild(HostDirective, { read: ViewContainerRef }) hostView: ViewContainerRef;
 
-  constructor(private cfr: ComponentFactoryResolver,
-    private view: ViewContainerRef) {}
+  constructor(
+private cfr: ComponentFactoryResolver,
+private view: ViewContainerRef
+  ) {
+
+  }
 
   async load() {
-    console.log(this.hostView)
     const {BannerComponent} = await import('./banner/banner.component');
     const BannerComponentFactory = this.cfr.resolveComponentFactory(BannerComponent);
+    // this.view.createComponent(BannerComponentFactory);
     this.hostView.createComponent(BannerComponentFactory);
   }
+
 }
