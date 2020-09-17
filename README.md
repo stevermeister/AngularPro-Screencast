@@ -1,6 +1,7 @@
 # AngularPro-Screencast
 
-There is also [Angular Basic Screencast (Russian)](http://learn.javascript.ru/screencast/angular)
+If you are looking for Basics/Quick Start here is [Angular Crash Course](https://www.youtube.com/watch?v=5juzxptjRhA) (+[Russian Version](https://www.youtube.com/watch?v=zxYn6qJ8M4c))
+There is also [Angular Basic Screencast (Russian)](https://www.youtube.com/playlist?list=PLDyvV36pndZF-vwsVB48ivZyNJ4ETBKNY)
 
 
 ## Season1: Content generation
@@ -14,3 +15,5 @@ There is also [Angular Basic Screencast (Russian)](http://learn.javascript.ru/sc
 
 
 ## Season2: Dependency injection
+
+1. 
