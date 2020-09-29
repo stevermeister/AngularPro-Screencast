@@ -16,4 +16,6 @@ There is also [Angular Basic Screencast (Russian)](https://www.youtube.com/playl
 
 ## Season2: Dependency injection
 
-1. 
+1. Decorators @Optional, @Self, @SkipSelf, @Host
+2. ProvideIn: 'platform'
+3. Providers vs ViewProviders 
