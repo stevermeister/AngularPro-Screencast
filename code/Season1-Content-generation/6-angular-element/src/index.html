@@ -11,7 +11,9 @@
   <app-hello>
     Something Else
   </app-hello>
-  <app-hello name="John"></app-hello>
+  <app-hello name="John">
+    <h1>SOMETHING!</h1>
+  </app-hello>
   <app-hello name="Alice"></app-hello>
   <app-hello name="Nick"></app-hello>
 
@@ -21,6 +23,7 @@
     el.addEventListener('clicked', event => {
       console.log(event.detail);
     })
+    el.innerHTML = '<h1>NOTHING!</h1>';
 
   </script>
 </body>
