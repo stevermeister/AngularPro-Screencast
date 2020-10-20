@@ -19,3 +19,7 @@ There is also [Angular Basic Screencast (Russian)](https://www.youtube.com/playl
 1. @Self, @SkipSelf, @Host, @Optional decorators (coming soon)
 2. ProvideIn: 'platform' (coming soon)
 3. Providers vs ViewProviders (coming soon)
+
+
+
+## Season3: Change Detection
