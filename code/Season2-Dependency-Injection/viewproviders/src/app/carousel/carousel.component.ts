@@ -6,8 +6,8 @@ import { InnerLogicService } from './inner-logic.service';
   selector: 'carousel',
   template: `
   <button (click)="cursor = cursor-1; update()" [disabled]=" cursor - 1 < 0">previous</button>
-  <button (click)="cursor = cursor+1; update()" [disabled]=" cursor + 1 > nodes.length">next</button>`,
-  providers: [ InnerLogicService ]
+  <button (click)="cursor = cursor+1; update()" [disabled]=" cursor + 1 > nodes.length - 1">next</button>`,
+  viewProviders: [ InnerLogicService ]
 })
 export class CarouselComponent implements AfterContentInit {
 
@@ -25,8 +25,6 @@ export class CarouselComponent implements AfterContentInit {
       this.cursor = (this.cursor + 1) % this.nodes.length;
       this.update();
     }, this.innerLogic.timer);
-    console.log(this.innerLogic.timer);
-    
   }
 
   update() {

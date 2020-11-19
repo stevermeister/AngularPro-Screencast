@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
       <div *carouselItem>🐠</div>
       <div *carouselItem>🐢</div>
       <div *carouselItem>🦆</div>
-      <!-- <hacker></hacker> -->
+      <hacker></hacker>
     </carousel>
   `
 })

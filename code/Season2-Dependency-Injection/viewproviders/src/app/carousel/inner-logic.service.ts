@@ -1,4 +1,4 @@
 
 export class InnerLogicService {
-  public timer = 5000;
+  public timer = 3000;
 }

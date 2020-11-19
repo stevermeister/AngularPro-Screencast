@@ -3,10 +3,10 @@
 
 ```typescript
 @Component({
-  selector: 'app-root',
+  selector: 'app-item',
   template: `Hello!`,
   providers: [],
   viewProviders: []
 })
-export class AppComponent {}
+export class AppItemComponent {}
 ```
