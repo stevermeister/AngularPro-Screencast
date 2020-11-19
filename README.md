@@ -11,7 +11,7 @@ There is also [Angular Basic Screencast (Russian)](https://www.youtube.com/playl
 3. [@Attribute() decorator](https://www.youtube.com/watch?v=g4YLxXsAEhQ)(+[Russian Version](https://www.youtube.com/watch?v=2cfwJgG4-Qo))
 4. [Multi-Input for Structural Directives](https://www.youtube.com/watch?v=6XQbI65O9jg)(+[Russian Version](https://www.youtube.com/watch?v=d9dt3QIAWDk))
 5. [Dynamic Components](https://www.youtube.com/watch?v=sUFZI0144l4)(+[Russian Version](https://www.youtube.com/watch?v=C5Iw61jXBMo))
-6. Angular Elements (coming soon)
+6. [Angular Elements](https://www.youtube.com/watch?v=ADx2etw_Flk)(+[Russian Version](https://www.youtube.com/watch?v=8uZmBZj_EfY))
 
 
 ## Season2: Dependency injection
@@ -19,3 +19,11 @@ There is also [Angular Basic Screencast (Russian)](https://www.youtube.com/playl
 1. @Self, @SkipSelf, @Host, @Optional decorators (coming soon)
 2. ProvideIn: 'platform' (coming soon)
 3. Providers vs ViewProviders (coming soon)
+
+
+
+## Season3: Change Detection
+1. NgZone explained
+2. Change Detection without Zones
+3. Difference between markForCheck() and detectChanges()
+4. How detach/reatach works
