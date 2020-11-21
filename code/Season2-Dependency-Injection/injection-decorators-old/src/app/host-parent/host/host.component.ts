@@ -1,4 +1,4 @@
-import { Component, Host, Optional } from '@angular/core';
+import { Component, Host, Optional, Self } from '@angular/core';
 import { FlowerService } from 'src/app/flower.service';
 
 @Component({
