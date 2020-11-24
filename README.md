@@ -18,8 +18,8 @@ There is also [Angular Basic Screencast (Russian)](https://www.youtube.com/playl
 
 1. [@Optional, @Self, @SkipSelf decorators](https://www.youtube.com/watch?v=fk9LEOjUs14) ( +[Russian Version](https://youtu.be/JTbgF07BHVQ) ) 
 2. [Difference between @Self and @Host  decorators](https://www.youtube.com/watch?v=VrD3FQgv8ik)  ( +[Russian Version](https://youtu.be/7Mb3EihtwJY) )
-3. ProvideIn: 'platform' (coming soon)
-4. Providers vs ViewProviders (coming soon)
+3. [Providers vs ViewProviders](https://www.youtube.com/watch?v=SFZKB5iYOPQ)  ( +[Russian Version](https://www.youtube.com/watch?v=H4fB_g9fmCM) )
+4. [ProvideIn: 'platform'](https://youtu.be/_GjfTDECWOg)  ( +[Russian Version](https://www.youtube.com/watch?v=Z4nlCClVU4U) )
 
 
 
