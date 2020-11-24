@@ -23,8 +23,12 @@ There is also [Angular Basic Screencast (Russian)](https://www.youtube.com/playl
 
 
 
-## Season3: Change Detection
-1. NgZone explained
-2. Change Detection without Zones
+## Season3: Change Detection (coming soon...)
+1. NgZone explained (coming soon...)
+2. Change Detection without Zones  (coming soon...)
 3. Difference between markForCheck() and detectChanges()
 4. How detach/reatach works
+
+
+## Season4: Router Features
+...
