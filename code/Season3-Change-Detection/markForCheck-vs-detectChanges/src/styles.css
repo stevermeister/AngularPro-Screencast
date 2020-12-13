@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #0c4eb2
+}
+
+
+.component {
+    position: relative;
+    width: 100px;
+    height: auto;
+    margin: 20px 0;
+    background: white;
+    border-radius: 15%;
+    color: grey;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+app-root {
+    position: absolute;
+    width: 500px;
+    border: 2px dotted white;
+    padding: 10px;
+}
+
+app-parent-one {
+    border: 2px dotted white;
+    padding: 10px;
+}
+
+app-child-one {
+    border: 2px dotted white;
+    padding: 10px;
+}
