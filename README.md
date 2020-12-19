@@ -24,10 +24,10 @@ There is also [Angular Basic Screencast (Russian)](https://www.youtube.com/playl
 
 
 ## Season3: Change Detection (coming soon...)
-1. NgZone explained (coming soon...)
-2. Change Detection without Zones  (coming soon...)
-3. Difference between markForCheck() and detectChanges()
-4. How detach/reatach works
+1. [NgZone explained](https://youtu.be/wlqAK2hMnKM) ( +[Russian Version]() ) 
+2. [Change Detection without Zones](https://youtu.be/c6NOJYR48ZE) ( +[Russian Version](https://youtu.be/MWfl_H4AgSc) ) 
+3. [Difference between markForCheck() and detectChanges()](https://youtu.be/OcphK_aEd7I) ( +[Russian Version](https://youtu.be/AaBKJuSb4hU) ) 
+4. [How detach/reatach works](https://youtu.be/FR-wCkqLMUc) ( +[Russian Version](https://youtu.be/5FuqAUUNZNA) ) 
 
 
 ## Season4: Router Features
