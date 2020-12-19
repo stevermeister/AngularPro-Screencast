@@ -12,7 +12,7 @@ export class AppComponent {
   text = 'no-zones';
   constructor(app: ApplicationRef) {
     interval(50).subscribe(_ => {
-      app.tick()
+      app.tick();
     })
   }
 }
