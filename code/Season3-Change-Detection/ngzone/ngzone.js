@@ -11,7 +11,7 @@ function onLeave() {
 }
 
 function checkStable() {
-  if (_nesting == 0) {
+  if (zone._nesting == 0 && !zone.hasPendingMicrotasks) {
     onMicrotaskEmpty.emit(null);
   }
 }
