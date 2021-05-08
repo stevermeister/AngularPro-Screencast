@@ -1,0 +1,20 @@
+{
+    "/": {
+      "/example": 80,
+      "/about": 20
+    },
+    "/example": {
+      "/": 20,
+      "/media": 0,
+      "/about": 80
+    },
+    "/about": {
+      "/": 20,
+      "/media": 80
+    },
+    "/media": {
+      "/": 33,
+      "/about": 33,
+      "/example": 34
+    }
+}
