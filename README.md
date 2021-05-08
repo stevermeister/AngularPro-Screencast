@@ -34,3 +34,5 @@ There is also [Angular Basic Screencast (Russian)](https://www.youtube.com/playl
 1. [Route Transition Animations](https://youtu.be/6cuxdEljhp8) ( +[Russian Version](https://youtu.be/C4AeDjaFtbY) ) 
 2. [Preloading Strategies for Lazy Loading Modules](https://youtu.be/tDQc3CCvKfc) ( +[Russian Version](https://youtu.be/e80rzt5SKHM) ) 
 3. [Custom Preloading Strategies](https://youtu.be/gGLWzsIpFcU) ( +[Russian Version](https://youtu.be/dI8UGSQfVXA) ) 
+4. [Angular + Guess.js](https://youtu.be/f6pbDmqsfes) ( +[Russian Version](https://youtu.be/ztZVUCUTANs) ) 
+5. RouteReuseStrategy
