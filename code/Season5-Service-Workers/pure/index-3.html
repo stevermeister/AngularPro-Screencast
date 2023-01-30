@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message communication</title>
+</head>
+<body>
+  <h1>Service Workers!</h1>
+  <script type="text/javascript">
+      if ('serviceWorker' in navigator) {
+          window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/sw3.js', {scope: '/'}).then(function(registration) {
+              // Registration was successful
+              console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }, function(err) {
+              // registration failed :(
+              console.log('ServiceWorker registration failed: ', err);
+            });
+          });
+
+
+          navigator.serviceWorker.addEventListener('message', (event) => {
+            console.log(`from SW: ${event.data}`);
+          });
+
+          navigator.serviceWorker.ready.then((registration) => {
+            registration.active.postMessage("Hi service worker");
+          });
+
+          
+      }
+  </script>
+    
+</body>
+</html>
