@@ -29,11 +29,18 @@ STEP-2 Clean Cache
 STEP-3 Messages
 
 1. compare to WebWorkers
-2. 
+2. show how to send messages to SW and back 
 
 
 
 STEP-4 Push Notifications
+1. general picture 
+2. subscribe to push notifications
+3. send subscription
+4. save subscription on server side
+5. send push notificaion
+6. listen to push event
+7. show browser notification
 
 
 Angular SW

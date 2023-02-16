@@ -1,0 +1,22 @@
+{
+  "name": "urlsafe-base64",
+  "version": "1.0.0",
+  "description": "URL Safe Base64 encoding",
+  "keywords": ["base64", "encoding", "url", "util"],
+  "author": "RGBboy <l-_-l@rgbboy.com>",
+  "repository" : {
+    "type" : "git",
+    "url" : "http://github.com/RGBboy/urlsafe-base64"
+  },
+  "main": "index",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha": "1.5.x",
+    "should": "1.2.x"
+  },
+  "scripts" : {
+    "test" : "make test",
+    "unit" : "make unit"
+  }
+}

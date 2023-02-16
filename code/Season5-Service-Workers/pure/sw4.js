@@ -1,4 +1,4 @@
-const VERSION = "v5";
+const VERSION = "v4";
 
 log = (msg) => console.log(`${VERSION}:${msg}`);
 

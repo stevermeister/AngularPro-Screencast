@@ -11,7 +11,7 @@
     <script type="text/javascript">
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", function () {
-          navigator.serviceWorker.register("/sw5.js", { scope: "/" }).then(
+          navigator.serviceWorker.register("/sw4.js", { scope: "/" }).then(
             function (registration) {
               // Registration was successful
               console.log(
@@ -26,26 +26,26 @@
           );
         });
 
-        navigator.serviceWorker.ready.then(function (registration) {
+        navigator.serviceWorker.ready.then(async function (registration) {
 
 
           const pushServerPublicKey = "BCIXQbt6YBfQWqVgy_MZDOSKQ0SHil7eeq0ldaFAO7wIPYS2AJTOA50RJkbEmfkgFjeOKJzOHm4cUyOMktB6G_M";
           // subscribe and return the subscription
-          registration.pushManager
+          const subscription = await registration.pushManager
             .subscribe({
               userVisibleOnly: true,
               applicationServerKey: pushServerPublicKey,
             })
-            .then(function (subscription) {
-              console.log("User is subscribed.", subscription);
-              fetch("http://localhost:3000/subscription", {
-                method: "POST",
-                body: JSON.stringify(subscription),
-                headers: {
-                  "Content-Type": "application/json",
-                },
-              });
-            });
+
+
+          fetch("http://localhost:3000/subscription", {
+            method: "POST",
+            body: JSON.stringify(subscription),
+            headers: {
+              "Content-Type": "application/json",
+            },
+          });
+
 
 
 

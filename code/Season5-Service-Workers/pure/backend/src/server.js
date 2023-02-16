@@ -14,13 +14,6 @@ app.post("/subscription", (req, res) => {
     fs.writeFileSync("subscription.json", JSON.stringify(pushSubscription));
     res.status(200).send("OK");
 });
-// app.get("/sendpush", (_, res)  => {
-//     const pushSubscription = JSON.parse(fs.readFileSync("subscription.json"));
-//     console.log(pushSubscription);
-//     sendNotification(pushSubscription)
-//     res.status(200).send("message has been sent");
-// });
-
 
 app.listen(3000, "0.0.0.0");
 
