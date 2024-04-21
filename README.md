@@ -38,4 +38,14 @@ There is also [Angular Basic Screencast (Russian)](https://www.youtube.com/playl
 5. [RouteReuseStrategy](https://youtu.be/fd8i6x4zczU) ( +[Russian Version](https://www.youtube.com/watch?v=6u38yh_ZlQg) ) 
 
 
+## Season5: Service Workers
+1. [Quick start with ServiceWorkers](https://youtu.be/NrbAIKVQTCs?si=kpZD6CzM1fPyG2b8)
+2. [Caching application with help of ServiceWorkers](https://youtu.be/hobHH_JdF-0?si=ut3MNs8G7kBDvqUK)
+3. [Advanced technics for caching](https://youtu.be/tRx7MrUjG-E?si=WnyXm4pyHOr4oBxP)
+4. [Issue with an old ServiceWorker cache](https://youtu.be/QyWn7y8G_6k?si=HqDRTaDnTH7EwCxy)
+5. [Communicate with ServiceWorkers by message event](https://youtu.be/UzHACywwthQ?si=28kbcRe_YO789NZ9)
+6. [Push Notifications explained](https://youtu.be/J6XA-1LNo0k?si=5XMLPL1iz1NgNkDd)
+7. Quick start with ServiceWorkers in Angular
+8. Application updates and SwUpdate
+9. Push Notifications and SwPush
 
