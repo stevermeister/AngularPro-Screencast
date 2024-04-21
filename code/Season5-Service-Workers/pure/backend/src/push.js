@@ -12,11 +12,23 @@ webpush.setVapidDetails(
   VAPID.privateKey
 );
 
+const payload = JSON.stringify({
+  "notification": {
+    "title": "New Video!",
+    "icon": "https://yt3.googleusercontent.com/-wKHZxmgNZaBcyC9ISvoeK24IYV9Bg5IoNtZATU0YPPKCqFPF36FeF9hb8UIo629zOKzQm0u=s176-c-k-c0x00ffffff-no-rj",
+    "data": {
+      "onActionClick": {
+        "default": {"operation": "openWindow", "url": "https://www.youtube.com/channel/UCLZX5mWyQ0v1Z4ssk9uJw-g"}
+      }
+    }
+  }
+});
+
 function sendNotification(pushSubscription) {
   return webpush
     .sendNotification(
       pushSubscription,
-     "JUST TEXT"
+      payload
     )
     .catch((err) => {
       console.log(err);

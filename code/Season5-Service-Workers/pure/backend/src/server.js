@@ -12,7 +12,8 @@ const fs = require('fs');
 app.post("/subscription", (req, res) => {
     const pushSubscription = req.body;
     fs.writeFileSync("subscription.json", JSON.stringify(pushSubscription));
-    res.status(200).send("OK");
+    console.log('Subscription saved');
+    res.status(201).json({});
 });
 
 app.listen(3000, "0.0.0.0");
