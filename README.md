@@ -45,7 +45,7 @@ There is also [Angular Basic Screencast (Russian)](https://www.youtube.com/playl
 4. [Issue with an old ServiceWorker cache](https://youtu.be/QyWn7y8G_6k?si=HqDRTaDnTH7EwCxy)
 5. [Communicate with ServiceWorkers by message event](https://youtu.be/UzHACywwthQ?si=28kbcRe_YO789NZ9)
 6. [Push Notifications explained](https://youtu.be/J6XA-1LNo0k?si=5XMLPL1iz1NgNkDd)
-7. Quick start with ServiceWorkers in Angular
-8. Application updates and SwUpdate
-9. Push Notifications and SwPush
+7. [Getting Started with Angular Service Workers: Your First Step Towards PWA](https://www.youtube.com/watch?v=lmPzbvzDB3k)
+8. [Managing Application Updates with Angular Service Workers: Mastering SwUpdate](https://www.youtube.com/watch?v=AV98ZvCM1-c)
+9. [Implementing Push Notifications with Angular Service Workers: Utilizing SwPush](https://www.youtube.com/watch?v=J50EdxEeWPU)
 
