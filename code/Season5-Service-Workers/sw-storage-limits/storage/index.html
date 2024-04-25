@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Storage</title>
+    <script src="./1-cookie.js"></script>
+    <script src="./2-webStorage.js"></script>
+    <script src="./3-indexedDB.js"></script>
+    <script src="./4-cacheAPI.js"></script>
+    <script src="./5-fileAccessAPI.js"></script>
+  </head>
+
+  <body>
+    <h1>Storages</h1>
+
+    <button id="fileButton">File Access API</button>
+    <script>
+      document
+        .getElementById("fileButton")
+        .addEventListener("click", useFileSystem);
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Storage</title>
+  </head>
+
+  <body>
+    <h1>CacheAPI</h1>
+    <button data-command="CacheAPI-fillStorage">Fill Storage</button>
+    <button data-command="CacheAPI-clearStorage">Clear Storage</button>
+    <h1>IndexedDB</h1>
+    <button data-command="IndexedDB-fillStorage">Fill Storage</button>
+    <button data-command="IndexedDB-clearStorage">Clear Storage</button>
+
+    <script type="text/javascript">
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker
+            .register("/sw.js", { scope: "/", type: "module" })
+            .then(
+              function (registration) {
+                // Registration was successful
+                console.log(
+                  "ServiceWorker registration successful with scope: ",
+                  registration.scope
+                );
+              },
+              function (err) {
+                // registration failed :(
+                console.log("ServiceWorker registration failed: ", err);
+              }
+            );
+        });
+      }
+
+      navigator.serviceWorker.ready.then((registration) => {
+        document.querySelectorAll("button").forEach(function(button) {
+          button.addEventListener("click", function() {
+            var command = button.getAttribute("data-command");
+            registration.active.postMessage({ command: command });
+          });
+        });
+      });
+    </script>
+
+    <script>
+      setInterval(() => {
+        if (navigator.storage && navigator.storage.estimate) {
+          navigator.storage
+            .estimate()
+            .then((estimate) => {
+              const usedMB = (estimate.usage / 1024 / 1024).toFixed(2); // Convert bytes to MB and round to two decimal places
+              const availableMB = (estimate.quota / 1024 / 1024).toFixed(2); // Convert bytes to MB and round to two decimal places
+              console.clear();
+              console.log(`Used storage: ${usedMB} MB`);
+              console.log(`Available storage: ${availableMB} MB`);
+            })
+            .catch((err) => {
+              console.error("Failed to get storage estimate:", err);
+            });
+        } else {
+          console.log("StorageManager API is not available in this browser.");
+        }
+      }, 1000); // Repeat every 1000 milliseconds (1 second)
+    </script>
+  </body>
+</html>
